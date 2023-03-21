@@ -43,7 +43,7 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-// Call Fetch Event
+// Call Fetch Event (make site visible offline)
 self.addEventListener('fetch', (e) => {
   console.log('Service Worker: Fetching');
   // Check to see if the live site is up, else load cached site
